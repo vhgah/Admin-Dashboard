@@ -272,9 +272,26 @@
               <h3>Add Product</h3>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+    <script>
+      const buttonShow = document.getElementById("menu-btn");
+      const buttonClose = document.getElementById("close-button");
+      const menu = document.querySelectorAll("aside");
+      const toggleButton = document.querySelectorAll(".theme-toggle");
+
+      buttonShow.addEventListener("click", function () {
+        menu[0].style.display = "block";
+      });
+
+      buttonClose.addEventListener("click", function () {
+        menu[0].style.display = "none";
+      });
+
+      toggleButton[0].addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme-variables");
+      });
+    </script>
   </body>
 </html>
